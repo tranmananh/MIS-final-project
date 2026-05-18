@@ -1,0 +1,222 @@
+body {
+    padding:0;
+    margin:0;
+    max-width: 100%;
+    box-sizing:border-box;
+    font-family:arial;
+    cursor:pointer;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+#wrapper {
+    background-color: #e9edc9;
+    width:100%;
+    height: 110px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+#header {
+    max-width: 100%;
+    padding: 0px 40px 20px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#header .logo {
+    padding: 5px 0px 0px 25px;
+}
+#menu {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+#menu .item {
+    margin-left: 55px;
+   
+}
+
+#menu .item a {
+    color: #85a771;
+    font-weight: bold;
+    font-family: Garamond;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+#menu .item a:hover {
+    color: #283618;
+}
+#actions {
+    display: flex;
+    margin: 10px;
+}
+
+#actions .item {
+    margin-right: 50px;
+}
+
+#banner {
+    max-width: 100%;
+    background-image: url("../Image/background3.jpg") ;
+    height: 500px;
+    margin-top: 20px;
+    display:flex;
+    padding: 0px 133px;
+    position:relative;
+}
+
+#banner .box-left , #banner .box-right {
+    max-width: 100%;
+}
+
+#banner .box-left h2 .highlight1 {
+    white-space: nowrap;
+    font-size: 37px;
+    font-family: Copperplate;
+    text-shadow: 1px 1px 1px #263c2a;
+    padding-top: 60px;
+    color: #656d4a;
+}
+#banner .box-left h2 .highlight2 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+    text-shadow: 2px 0px 3px #5e503f;
+    margin-top: 40px;
+    color: #4f772d;
+}
+#banner .box-left p {
+    color: #5e503f;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0px;
+}
+
+#banner .box-left button {
+    font-size: 18px;
+    font-family:garamond;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background: #283618;
+    border: none;
+    outline: none;
+    color: #F7EED3;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#banner .box-left button:hover {
+    background:#AAB396;
+    color: #283618;
+
+}
+
+#banner .box-right {
+    padding-left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .box-right img {
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+}
+
+#banner .box-right img:nth-child(1)
+{
+    animation-delay: 0.4s;
+}
+
+#banner .box-right img:nth-child(3)
+{
+    animation-delay: 0.4s;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(px);
+    }
+}
+
+.to-bottom {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50px);
+}
+#footer {
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 0px;
+    padding-left: -15px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #93ad84;
+}
+
+.footerContainer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}    
+
+.socialIcons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;    
+    background-color: white;
+    margin: 30px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #4f772d;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #4f772d;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 0;
+}
+
+
+.footerNav ul{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    font-family:Garamond;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    color: #4f772d;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - MATDATE</title>
+    <link rel="stylesheet" href="../CSS/thanhtoan.css">
+    <script src="../JS/thanhtoan.js" defer></script>
+    <script src="../JS/assetPathFix.js" defer></script>
+</head>
+<body style="background-image: url('../Image/bgthanhtoan.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="payment-container">
+        <div class="form-box">
+            <h1 class="title">PAYMENT</h1>
+            
+            <form onsubmit="return validateForm()">
+
+                <div class="form-group">
+                    <label for="fullname">FULLNAME</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">ADDRESS</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+84 123 456 789" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">BIRTHDATE</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+                <div class="form-group gender-group">
+                    <label>GENDER</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentMethod">PAYMENT METHOD</label>
+                    <select id="paymentMethod" name="paymentMethod" onchange="showPaymentDetails()" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="COD">COD</option>
+                    </select>
+                </div>
+
+                <!-- Credit Card Details -->
+                <div id="credit-card-details" style="display: none;">
+                    <div class="form-group">
+                        <label for="cardNumber">CARD NUMBER</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">EXPIRY DATE</label>
+                        <input type="month" id="expiryDate" name="expiryDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="XXX">
+                    </div>
+                </div>
+
+                <!-- COD Details -->
+                <div id="cod-details" style="display: none;">
+                    <div class="form-group">
+                        <label for="codInstructions">COD INSTRUCTIONS</label>
+                        <input type="text" id="codInstructions" name="codInstructions" placeholder="Special delivery instructions">
+                    </div>
+                </div>
+
+                <div id="error-message" class="error-message" style="display: none; color: red;">You must fill in required areas!</div>
+
+                <button type="submit" class="submit-button">CONFIRM</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 MATDATE. All rights reserved.
+    </footer>
+	<a href="homepage_final.html" class="home">
+        <img src="homeicon.png" alt="Home" class="homeicon">
+    </a>
+</body>
+</html>

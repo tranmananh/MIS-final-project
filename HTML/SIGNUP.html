@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> REGISTER </title>
+<h1> REGISTRATION FORM </h1>
+<link rel="stylesheet" type="text/css" href="../CSS/dangnhapdangki.css">
+<script src="../JS/dangnhapdangki.js"></script>
+    <script src="../JS/assetPathFix.js" defer></script>
+</head>
+<body>
+<a href="homepage_final.html" class="home">
+    <img src="homeicon.png" alt="Home" />
+</a>
+<div id="khungdangki">
+<h3 style="font-size: 25px; font-family: Garamond; margin-top: 15px; color: #74512d; margin-bottom: 12px;"> Please fill in your information </h3>
+<form name="registration" method="post">
+<table>
+<tr>
+<td class="tieude"><label for="firstname"> First name </label></td>
+<td><input type="text" name="firstname"><br></td>
+</tr>
+<tr>
+<td class="tieude"><label for="lastname"> Last name </label></td>
+<td><input type="text" name="lastname"><br></td>
+</tr>
+<tr>
+<td class="tieude"><label for="username"> Username </label></td>
+<td><input type="text" name="username"><br></td>
+</tr>
+<tr>
+<td class="tieude"><label for="pazsword"> Password </label></td>
+<td><input type="password" name="pazsword"><br></td>
+</tr>
+<tr>
+<td class="tieude"><label for="email"> Email </label></td>
+<td><input type="text" name="email"><br></td>
+</tr>
+<tr>
+<td class="tieude"><label for="phonenumber"> Phone number </label></td>
+<td><input type="text" name="phonenumber"><br></td>
+</tr>
+<tr>
+<td class="tieude"><label for="Sex"> Sex </label></td>
+<td style="text-align: left;  padding-left: 70px;"><input type="radio" name="Sex" value="Male" checked> Male 
+<input type="radio" name="Sex" value="Female"> Female <br></td>
+</tr>
+<tr>
+<td class="tieude"><label for="Age"> Age </label></td>
+<td>
+<select name="Age">
+<option value="select"> Select Age </option>
+<option value="10-15"> 10-15 </option>
+<option value="16-20"> 16-20 </option>
+<option value="21-25"> 21-25 </option>
+<option value="26-30"> 26-30 </option>
+<option value="31-35"> 31-35 </option>
+<option value="36-40"> 36-40 </option>
+<option value="41-45"> 41-45 </option>
+<option value="46-50"> 46-50 </option>
+<option value="50+"> 50+ </option>
+</select>
+</td>
+</table>
+<br>
+<br>
+<input type="button" value="Register" onclick="dangki()" name="register">
+</form>
+</div>
+</body>
+
+</html>

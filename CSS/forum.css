@@ -1,0 +1,372 @@
+/* style.css */
+body {
+    font-family: Garamond;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #003526; 
+    font-size: 45px;
+    z-index: 1; 
+    position: relative;
+}
+
+h2 {
+	color: #003526; 
+    border-bottom: 2px solid #003526; 
+	font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 25px;
+	text-align: center;
+    	
+}
+
+h4 {
+	font-size: 15px;
+}
+
+h5  { 
+    color: #003526; 
+	z-index: 1; 
+    font-size: 20px; 
+    position: relative;
+} 
+
+p {
+	font-size: 19px; 
+}
+
+.header-banner {
+    height: 150px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    text-align: center;
+	border: 1px solid #aabda1; 
+	border-radius: 5px;
+	background-color: #aabda1; 
+	padding: 20px;
+    margin: 20px;
+}  
+
+#wrapper {
+    background-color: #e6f0de; 
+    margin: 20px;
+    height: 90px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); 
+} 	
+
+#header {
+    max-width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    text-align: center;
+} 
+#header .logo {
+    padding: 5px 0px 0px 25px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+	display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+#menu .item {
+    margin-left: 55px;
+   
+}
+
+#menu .item a {
+    color: #003526; 
+    font-weight: bold;
+    font-family: Garamond;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+#menu .item a:hover {
+    color: #aabda1; 
+}
+#actions {
+    display: flex;
+    margin: 10px;
+}
+
+#actions .item {
+    margin-right: 50px;
+}
+
+nav ul {
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.discussion-section, .resources-section, .contact-section, .create-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #e6f0de; 
+    border-radius: 5px;
+}
+
+
+form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+}
+input[type="text"], textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+}
+		
+.rating {
+            display: flex;
+            justify-content: left; 
+            direction: row-reverse;
+            margin-bottom: 20px;
+}
+.rating input {
+            display: none;
+}
+.rating label {
+            font-size: 30px;
+            color: lightgray;
+            cursor: pointer;
+}
+        .rating input:checked ~ label {
+            color: gold;
+}
+        .rating input:not(:checked) ~ label:hover,
+        .rating input:not(:checked) ~ label:hover ~ label {
+            color: gold;
+}
+
+.topic-list {
+    list-style-type: none;
+    padding: 0;
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.topic-list li {
+    padding: 20px;
+    background-color:  #f4f4f4;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color:  #aabda1;
+}
+
+
+
+
+.star-rating {
+    direction: rtl; 
+    font-size: 30px; 
+}
+
+.star {
+    cursor: pointer;
+    color: gold; 
+}
+
+.star.selected {
+    color: gold;
+}
+
+
+.comment-box {
+    margin-top: 10px;
+	width: 820px;
+	height: 100px;
+}
+
+.image { 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row; 
+    gap: 20px;
+}
+
+.centered-image {
+	max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.resources-section ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.resources-section li {
+    margin-bottom: 10px; 
+}
+
+.resources-section a {
+    text-decoration: none; 
+    color: black; 
+}
+
+.resources-section a:hover {
+    text-decoration: underline;
+}
+
+.news-container {
+    max-width: 2000px;
+    margin: auto;
+    background:  #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; 
+}
+.news-items {
+    display: flex;
+	flex-wrap: wrap; 
+    gap: 20px; 
+}
+.news-item {
+    flex: 1 1 calc(33% - 20px); 
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #739862;
+}
+a:hover {
+    text-decoration: underline;
+}
+.citation {
+    font-size: 0.9em;
+    color: #555;
+}
+.description {
+    color: #41684f;
+    font-size: 15px; 
+}
+
+
+#footer {
+    width: 90%;
+    height: 50px;
+    margin: 10px 0 0 -15px;
+    padding: 0px 15px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.footerContainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}    
+.socialIcons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;    
+    background-color: white;
+    margin: 30px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #4f772d;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #4f772d;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: #003526; 
+    font-family:Garamond;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    color: #fcfadb; 
+}
+
+.review-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f0de;
+    border-radius: 5px;
+}

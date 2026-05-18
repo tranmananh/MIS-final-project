@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu </title>
+	<link rel="stylesheet" type="text/css" href="../CSS/menucart.css">
+    <script src="../JS/menucart.js"> </script> 
+    <script src="../JS/assetPathFix.js" defer></script>
+</head>
+
+<body>
+
+
+    <a href="homepage_final.html" class="home">
+        <img src="homeicon.png" alt="Home" class="homeicon">
+    </a>
+    <a href="cart.html" target="">
+        <img src="carticon.png" alt="Cart" class="carticon">
+    </a>
+
+
+<div class="header-banner">
+    <div class="overlay">
+        <h1> MATDATE MENU </h1>
+		<h4> JAPANESE CAKES - CAKES - PASTRIES & PIES - FROZEN - BEVERAGE </h4> 
+    </div>
+</div>
+
+<h2> JAPANESE CAKES </h2> 
+<div class="menu"> 
+<div class="menu-item">
+    <img src="13.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha anpan </h3>
+    <p> Price: 40.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item13')">-</button>
+    <span id="item13-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item13')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha anpan', 40000, 'item13')">Add to cart</button>
+	</div> 
+</div>
+<div class="menu-item">
+    <img src="14.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha taiyaki </h3>
+    <p> Price: 40.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item14')">-</button>
+    <span id="item14-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item14')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha taiyaki', 40000, 'item14')">Add to cart</button>
+	</div> 
+</div>
+<div class="menu-item">
+    <img src="15.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha cream sando </h3>
+    <p> Price: 60.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item15')">-</button>
+    <span id="item15-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item15')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha cream sando', 60000, 'item15')">Add to cart</button>
+	</div> 
+</div>
+<div class="menu-item">
+    <img src="16.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha mochi </h3>
+    <p> Price: 60.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item16')">-</button>
+    <span id="item16-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item16')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha mochi', 60000, 'item16')">Add to cart</button>
+	</div> 
+</div>
+</div> 
+
+<h2> CAKES </h2> 
+<div class="menu"> 
+<div class="menu-item">
+    <img src="1.jpg" height'"170" width="227"> 
+	<hr>
+    <h3> Matcha & red bean sponge cake </h3>
+    <p> Price: 80.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item1')">-</button>
+    <span id="item1-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item1')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha & red bean swiss roll', 80000, 'item1')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="2.jpg" height'"170" width="227"> 
+	<hr>
+    <h3> Matcha & red bean swiss roll </h3>
+    <p> Price: 65.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item2')">-</button>
+    <span id="item2-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item2')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha & red bean sponge cake', 65000, 'item2')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="3.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha cream sponge cake </h3>
+    <p> Price: 70.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item3')">-</button>
+    <span id="item3-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item3')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha cream sponge cake', 70000, 'item3')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="4.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha terrine </h3>
+    <p> Price: 80.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item4')">-</button>
+    <span id="item4-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item4')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha terrine', 80000, 'item4')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="9.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha & cranberries donut </h3>
+    <p> Price: 60.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item9')">-</button>
+    <span id="item9-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item9')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha & cranberries donut', 60000, 'item9')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="10.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha monster donut </h3>
+    <p> Price: 70.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item10')">-</button>
+    <span id="item10-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item10')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha monster donut', 70000, 'item10')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="11.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha eclair </h3>
+    <p> Price: 80.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item11')">-</button>
+    <span id="item11-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item11')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha eclair', 80000, 'item11')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="12.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha cheesecake </h3>
+    <p> Price: 60.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item12')">-</button>
+    <span id="item12-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item12')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha cheesecake', 60000, 'item12')">Add to cart</button>
+	</div>
+</div>
+</div> 
+
+<h2> PASTRIES & PIES </h2> 
+<div class="menu"> 
+<div class="menu-item">
+    <img src="5.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha croissant roll </h3>
+    <p> Price: 80.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item5')">-</button>
+    <span id="item5-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item5')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha croissant roll', 80000, 'item5')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="6.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha tart </h3>
+    <p> Price: 85.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item6')">-</button>
+    <span id="item6-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item6')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha tart', 85000, 'item6')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="7.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha chocolate tart</h3>
+    <p> Price: 85.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item7')">-</button>
+    <span id="item7-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item7')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha chocolate tart', 85000, 'item7')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="8.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha cream puff </h3>
+    <p> Price: 70.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item8')">-</button>
+    <span id="item8-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item8')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha cream puff', 70000, 'item8')">Add to cart</button>
+	</div>
+</div>
+</div> 
+
+<h2> FROZEN </h2> 
+<div class="menu"> 
+<div class="menu-item">
+    <img src="17.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Chausson aux pommes frozen </h3>
+    <p> Price: 330.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item17')">-</button>
+    <span id="item17-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item17')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Chausson aux pommes frozen', 330000, 'item17')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="18.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Croissant frozen </h3>
+    <p> Price: 205.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item18')">-</button>
+    <span id="item18-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item18')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Croissant frozen', 205000, 'item18')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="19.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Pain au chocolat frozen </h3>
+    <p> Price: 220.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item19')">-</button>
+    <span id="item19-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item19')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Pain au chocolat frozen', 220000, 'item19')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="20.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Pate feuillete </h3>
+    <p> Price: 150.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item20')">-</button>
+    <span id="item20-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item20')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Pate feuillete', 220000, 'item20')">Add to cart</button>
+	</div>
+</div>
+</div> 
+
+<h2> BEVERAGE </h2> 
+<div class="menu"> 
+<div class="menu-item">
+    <img src="21.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Holly peach </h3>
+    <p> Price: 55.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item21')">-</button>
+    <span id="item21-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item21')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Holly peach', 55000, 'item21')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="22.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Matcha latte </h3>
+    <p> Price: 55.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item22')">-</button>
+    <span id="item22-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item22')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Matcha latte', 55000, 'item22')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="23.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> Barxiu </h3>
+    <p> Price: 45.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item23')">-</button>
+    <span id="item23-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item23')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('Barxiu', 45000, 'item23')">Add to cart</button>
+	</div>
+</div>
+<div class="menu-item">
+    <img src="24.jpg" height'"170" width="227"> 
+	<hr>
+	<h3> White café </h3>
+    <p> Price: 50.000 VND </p>
+	<div class="button"> 
+    <button class="custom-button" onclick="decreaseQuantity('item24')">-</button>
+    <span id="item24-quantity">0</span>
+    <button class="custom-button" onclick="increaseQuantity('item24')">+</button>
+    <br><br>
+    <button class="custom-button" onclick="addToCart('White café', 50000, 'item24')">Add to cart</button>
+	</div>
+</div>
+</div> 
+
+<br>
+
+</body>
+</html>

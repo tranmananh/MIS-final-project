@@ -1,0 +1,142 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: #F5F5F5;
+	background-image: url("../Image/bgthanhtoan.png");
+	height: 100vh; 
+	background-attachment: fixed; 
+    font-family: 'Garamond', serif;
+	font-style: bold;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+	margin-left: 400px;
+	margin-right: 100px;
+}
+
+.payment-container {
+    background-color: #fff;
+    width: 450px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-bottom: 20px;
+	position: relative; 
+}
+
+.form-box {
+    padding: 20px;
+}
+
+
+.title {
+    font-family: 'Garamond', serif;
+    text-align: center;
+    color: #7D9A5C; 
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="month"], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    font-size: 1rem;
+    color: #333;
+    font-family: 'Garamond', serif;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #7D9A5C; 
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-options label {
+    font-weight: 500;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+button.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #7D9A5C; 
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-button:hover {
+    background-color: #6b8852;
+}
+
+.error-message {
+    display: none;
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    font-family: 'Garamond', serif;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+
+.home {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 2000; 
+}
+
+.homeicon {
+    width: 60px; 
+    height: 60px; 
+}

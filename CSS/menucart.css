@@ -1,0 +1,143 @@
+body {
+    font-family: Garamond;   
+	background-color:  #874c22; 
+	background-image: url("../Image/bgmenu.png");
+	height: 100vh; 
+	background-attachment: fixed; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat;
+
+} 
+
+h1 {
+    color: #622b00; 
+    font-size: 60px;
+    z-index: 1; 
+    position: relative;
+}
+
+h2 {
+	font-size: 30px; 
+    color: #fbf4e2; 
+	margin-left: 30px; 
+} 
+
+h4  { 
+    color: #874c22; 
+    font-size: 25px;
+    position: relative;
+} 
+
+.cart {
+    margin-top: 20px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #fbf4e2; 
+    padding: 10px;
+	font-size: 16px; 
+	font-weight: bold;
+	color: #fbf4e2; 
+}
+.total {
+	font-size: 30px; 
+    font-weight: bold;
+	color: #fbf4e2; 
+    margin-top: 20px;
+	margin-left: 30px; 
+}
+
+.header-banner {
+    height: 220px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    text-align: center;
+	border: 1px solid #a5bea2; 
+	background-color: #fbf4e2; 
+}
+
+.menu {   
+    display: flex; 
+    justify-content: center;
+	flex-wrap: wrap; 
+	gap: 10px; 
+	margin: 5px; 
+	font-size: 17px; 
+	color: #622b00; 
+} 
+
+.menu-item {
+	width: 20%; 
+    border: 1px solid #e4f0df;
+	border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+	background-color: #fbf4e2; 
+}
+.custom-button {
+    background-color: #fbf4e2; 
+	font-family: Garamond;  
+	font-weight: bold; 
+	font-size: 17px; 
+	border: #fbf4e2; 
+	color: #622b00; 
+	transition: background-color 0.3s;
+	border-radius: 5px;
+} 
+
+.custom-button:hover{
+	background-color: #b09070;
+	color:#fbfadb;
+}
+	
+hr { 
+    height: 2px;
+	background-color:  #874c22; 
+} 
+
+.carticon {
+    position: fixed;
+    top: 20px; 
+    right: 30px; 
+    width: 50px; 
+    height: 50px; 
+    z-index: 1000; 
+}
+
+.back-to-menubutton {
+    background-color: #aebda0;
+	color: white;
+	border: 2px solid #739862;
+	font-family: Garamond;
+	font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px; 
+    cursor: pointer; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s; 
+}
+
+.back-to-menubutton:hover {
+    background-color: #fbfadb;
+	color:#739862;
+}
+
+.home {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 2000; 
+}
+
+.homeicon {
+    width: 60px; 
+    height: 60px; 
+}
+
+

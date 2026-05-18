@@ -1,0 +1,66 @@
+body {
+	background-color: #f7f3e1;
+	background-size: 100%;
+	background-image: url("../Image/bgthetichdiem.png");
+	height: 100vh; 
+	background-attachment: fixed; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat;>
+
+}
+
+#header {
+	background-color: #12372a;
+	margin-top: -20px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+h1 {
+	color: white;;
+	text-align: center;
+	font-family: Garamond;
+	margin-left: 10px;
+}
+h2 {
+	color: #bbd59a;
+	text-align: center;
+	font-family: Garamond;
+	padding-top: 10px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+
+table.frontend, td {
+	border: 1.5px solid black;
+	border-collapse: collapse;
+
+}
+
+td.tieude {
+	width: 35%;
+	text-align: left;
+	padding-left: 5px;
+	background-color: transparent;
+}
+
+td.ttin {
+	background-color: transparent;
+	padding-left: 5px;
+}
+
+table {
+	margin: auto;
+}
+
+.home {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 2000; 
+}
+
+.homeicon {
+    width: 60px; 
+    height: 60px; 
+}

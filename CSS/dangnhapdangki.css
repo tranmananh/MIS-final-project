@@ -1,0 +1,188 @@
+
+body {
+	background-color: #acbb9e;
+	background-size: 100%;
+	transition: opacity 1s;
+	background-image: url("../Image/bgsignup.png");
+	height: 100vh; 
+	background-attachment: fixed; 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat;>
+
+}
+
+
+h1 {
+	text-align: center;
+	font-family: Garamond;
+	padding-top: 40px;
+	color: #12372a;
+}
+
+h2 {
+	text-align: center;
+	font-family: Garamond;
+	color: white;
+}
+
+
+#linksignup {
+	list-style-type: none;
+}
+
+#khungdangnhap {
+	text-align: center;
+	width: 400px;
+	height: 400px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: #e7f0dc;
+
+	
+}
+
+#khungdangki {
+	text-align: center;
+	width: 600px;
+	height: 600px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: #e7f0dc;
+}
+
+input[name="sign"],
+input[name="pass"],
+input[name="firstname"],
+input[name="lastname"],
+input[name="username"],
+input[name="pazsword"],
+input[name="email"],
+input[name="phonenumber"] {
+	height: 40px;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+}
+label[for="sign"],
+label[for="pass"] {
+	font-size: 20px;
+	font-family: Garamond;
+	font-weight: bold;
+	color: #436850;
+	margin-bottom: 15px;
+}
+
+input[name="log in"] {
+	height: 40px;
+	width: 220px;
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: Garamond;
+	font-weight: bold;
+	background-color: #436850;
+	border: none;
+	border-radius: 5px;
+	color: #e7f0dc;
+	transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+input[name="log in"]:hover {
+	background-color: #adbc9f;
+	color: #436850;
+}
+
+select {
+	height: 40px;
+	width: 200px;
+	margin-top: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+label[for="firstname"],
+label[for="lastname"],
+label[for="username"],
+label[for="pazsword"],
+label[for="email"],
+label[for="phonenumber"],
+label[for="Age"],
+label[for="Sex"] {
+	font-size: 20px;
+	font-family: Garamond;
+	font-weight: bold;
+	color: #436850;
+}
+input[name="register"] {
+	height: 40px;
+	width: 220px;
+	font-size: 20px;
+	font-family: Garamond;
+	font-weight: bold;
+	background-color: #436850;
+	border: none;
+	border-radius: 5px;
+	color: #e7f0dc;
+	transition: background-color 0.5s ease, color 0.5s ease;
+	
+}
+
+input[name="register"]:hover {
+	background-color: #adbc9f;
+	color: #436850;
+}
+
+input[name="Sex"] {
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+}
+
+table {
+	width: 100%;
+}
+td.tieude {
+	width: 40%;
+	text-align: center;
+}
+
+#header {
+	background-color: #12372a;
+	margin-top: -20px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+table.backend {
+	border: 1.5px solid #543310;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #cddcba;
+	text-align: center;
+	padding: 5px;
+	
+}
+
+th {
+	border: 1.5px solid #543310;
+	border-collapse: collapse;
+	background-color: #6a835a;
+	text-align: center;
+}
+
+.home {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    display: inline-block; 
+}
+
+.home img {
+    width: 60px; 
+    height: 60px; 
+}

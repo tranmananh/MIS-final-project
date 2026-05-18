@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MATDATE - Mark your date green! </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/homepage_final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../JS/assetPathFix.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="textxanh.png" alt="" height="100" weight="140">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href=""> Home Page </a>
+                </div>
+                <div class="item">
+                    <a href="Menu.html"> Product </a>
+                </div>
+                <div class="item">
+                    <a href=""> About Us </a>
+                </div>
+                <div class="item">
+                    <a href="FAQ-contact.html"> Contact </a>
+                </div>
+                <div class="item">
+                    <a href="SIGNIN.html"> Log In </a>
+                </div>
+                <div class="item">
+                    <a href="forum.html"> Our Community </a>
+                </div>
+            </div> 
+            <div id="actions">
+                <div class="item">
+					<a href="thetichdiem.html"> <img class="user.png" src="user.png" alt="" height="25" weight="25"> </a>
+                </div>
+                <div class="item"> 
+					<a href="Cart.html"> <img class="cart.png" src="cart.png" alt="" height="25" weight="25"> </a>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <span class="highlight1"> mark your date </span>
+                    <br>
+                    <span class="highlight2"> Green! </span>
+                </h2>
+                <p> The perfect blend of taste and health. </p>
+                <button>
+				<a href="menu.html" class="button">Get Started</a>
+				</button>
+            </div>
+            <div class="box-right">
+                <img src="bg1.jpg" alt="'" height="230" width="230">
+                <img src="bg2.jpg" alt="'" height="230" width="230">
+                <img src="bg3.jpg" alt="'" height="230" width="230">
+            </div>
+            <div class="to-bottom">
+                <a href="">
+                    <img src="angle-circle-down.png" alt="" height="30" weight="30">
+                </a>
+            </div>
+        </div>
+        <!-- About Us here -->
+	<style>
+		body {
+			font-family: 'Garamond', serif;
+			margin: 20px;
+		}
+
+		.container {
+			display: flex;
+			align-items: center;
+			text-align: left;
+		}
+
+		.left-image {
+			width: 150px; 
+			height: auto; 
+			margin-left: 20px;
+			margin-right: 300px; 
+		}	
+		.hover-underline {
+            text-decoration: none; 
+            transition: text-decoration 0.3s, transform 0.3s; 
+        }
+		.hover-underline:hover {
+            text-decoration: underline; 
+            transform: translateY(-5px); 
+        }
+	</style>
+
+
+	<div class="container">
+		<img src="aboutus.jpg" alt="Making Cakes" style="width: 700px; height: 700;">
+		<div class="content" style="max-width: 600px; padding-left: 80px;padding-right: 50px; border-radius: 8px; padding: 15px; font-family: 'Arial', sans-serif; line-height: 1;">
+			<h1 class="hover-underline" style="font-family: 'Garamond', serif; font-size: 40px; color: #739862; font-weight: bold; text-align: center;">MATDATE:</h1>
+			<h1 class="hover-underline" style="font-family: 'Garamond', serif; font-size: 35px; color: #739862; font-weight: bold; text-align: center;">Mark Your Date Green!</h1>
+			<h5 style="font-family: 'Garamond', serif; font-size: 16px; color: #41684f;">ABOUT US</h5>
+			<h3 class="hover-underline" style="font-family: 'Garamond', serif; font-size: 20px; color: #739862; font-weight: bold;">The Perfect Blend Of Taste and Health.</h3>
+			<p style="font-family: 'Garamond', serif; font-size: 15px; line-height: 1.6; color: #41684f; text-align: justify;">
+                MATDATE is a brand specializing in healthy desserts made with green tea, offering delicious flavors along with health benefits. Our products use natural ingredients, ensuring that you can indulge without worrying about your weight. Come and experience our delightful treats, enjoying the perfect blend of sweetness and green tea!
+            </p>
+		</div>		
+	</div>	
+		
+<br>
+<br>
+<br>
+	<!-- Daily images here -->
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Garamond', serif;
+		}
+        .image-slider {
+            display: flex;
+            overflow-x: auto;
+			padding: 10px 0;
+			cursor: grab;
+            scroll-snap-type: x mandatory; 
+        }
+		.image-slider::-webkit-scrollbar {
+			display: none;
+		}
+        .image-item {
+            flex: 0 0 auto; 
+            width: 200px; 
+            margin: 0 10px; 
+            scroll-snap-align: start;
+        }
+        .image-item img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+		.hover-underline {
+            text-decoration: none; 
+            transition: text-decoration 0.3s, transform 0.3s; 
+        }
+		.hover-underline:hover {
+            text-decoration: underline; 
+            transform: translateY(-5px); 
+        }
+    </style>
+
+
+	<div class="content" style="display: flex; flex-direction: column; align-items: center;">
+		<div class="hover-underline"  style="font-size: 30px; color: #739862; font-weight: bold;">- OUR DAILY IMAGES -</div>
+		<div style="font-size: 15px; color: #41684f; padding-top: 40px; padding-bottom: 40px;">Showing the most recent work images and products of MATDATE that you can scroll left to follow more.</div>
+	</div>
+
+    <div class="image-slider">
+        <div class="image-item">
+            <img src="daily1.jpg" alt="Daily 1">
+        </div>
+        <div class="image-item">
+            <img src="daily2.jpg" alt="Daily 2">
+        </div>
+        <div class="image-item">
+            <img src="daily3.jpg" alt="Daily 3">
+        </div>
+        <div class="image-item">
+            <img src="daily4.jpg" alt="Daily 4">
+        </div>
+        <div class="image-item">
+            <img src="daily5.jpg" alt="Daily 5">
+        </div>
+		<div class="image-item">
+            <img src="daily6.jpg" alt="Daily 6">
+        </div>
+		<div class="image-item">
+            <img src="daily7.jpg" alt="Daily 7">
+        </div>
+		<div class="image-item">
+            <img src="daily8.jpg" alt="Daily 8">
+        </div>
+		<div class="image-item">
+            <img src="daily9.jpg" alt="Daily 9">
+        </div>
+		<div class="image-item">
+            <img src="daily10.jpg" alt="Daily 10">
+        </div>
+		<div class="image-item">
+            <img src="daily11.jpg" alt="Daily 11">
+        </div>
+		<div class="image-item">
+            <img src="daily12.jpg" alt="Daily 12">
+        </div>
+		<div class="image-item">
+            <img src="daily13.jpg" alt="Daily 13">
+        </div>
+    </div>
+
+<br>
+<br>
+	<!-- Challenges here -->
+
+	<style>
+		.image:hover {
+			transform: translateY(-10px) scale(1.1);
+		}
+		.hover-underline {
+            text-decoration: none; 
+            transition: text-decoration 0.3s, transform 0.3s; 
+        }
+		.hover-underline:hover {
+            text-decoration: underline; 
+            transform: translateY(-5px); 
+        }
+    </style>
+
+
+	<div class="special-title">
+		<h1 style="background-color: #aebda0; color: #ffffff; padding: 30px; text-align: center; width: 100%;  margin-bottom: 20px;">OUR SPECIAL ONLINE CHALLENGES</h1>
+	</div>
+	
+	<!-- 7 Healthy Days Challenge -->
+	<div class="container" style="flex-direction: column; display: flex; align-items: center;">
+		<div class="text-section" style="margin-bottom: 20px; display: flex; align-items: center; flex-direction: column;">
+			<h1 class="hover-underline" style="padding-top: 10px; color: #739862">7 Healthy Days</h1>
+			<p id="content" style="font-size: 15px; color: #41684f; margin-left: 80px; margin-right: 80px; text-align: center; padding-bottom: 20px;">MATDATE encourages customers to like & share, and post their healthy lifestyle on social media platforms. Below is a short clip from a participant who garnered the highest engagement and won this challenge. (The video is owned by Ms. D.T.Q.N.)</p>
+		</div>	
+	
+		<div class="video-section" style="display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+			<video width="80%" height="auto" controls>
+				<source src="../Image/7healthydays.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	
+	<!-- Most creative matcha cake recipe -->
+    <div class="container" style="flex-direction: column; display: flex; align-items: center;">
+        <div class="text-section" style="margin-bottom: 20px; display: flex; align-items: center; flex-direction: column;">
+            <h1 class="hover-underline" style="padding-top: 10px; color: #739862">Most Creative Matcha Cake Recipe</h1>
+            <p id="content" style="font-size: 15px; color: #41684f; margin-left: 80px; margin-right: 80px; text-align: center; padding-bottom: 20px;">MATDATE encourages customers to create and share their recipes, and the three images below showcase the top 3 recipes that have won awards from MATDATE. These types of cakes may be researched, improved, and released for sale by MATDATE in the future.</p>
+        </div>
+        <div class="image-section" style ="display: flex; justify-content: center; gap: 40px;">
+            <img src="recipe1.png" alt="Matcha Cake Recipe 1" class="image" style="width: 380px; height: 550px; object-fit: cover; cursor: pointer; transition: transform 0.3s;">
+            <img src="recipe2.png" alt="Matcha Cake Recipe 2" class="image" style="width: 380px; height: 550px; object-fit: cover; cursor: pointer; transition: transform 0.3s;">
+            <img src="recipe3.png" alt="Matcha Cake Recipe 3" class="image" style="width: 380px; height: 550px; object-fit: cover; cursor: pointer; transition: transform 0.3s;">
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+	<!-- Beneficial News here -->
+
+    <style>
+        body {
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .news-container {
+            max-width: 2000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column; 
+        }
+        .news-items {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 20px; 
+        }
+        .news-item {
+            flex: 1 1 calc(33% - 20px); 
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #755029;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 25px;
+        }
+        a {
+            text-decoration: none;
+            color: #739862;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .citation {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .description {
+            color: #41684f;
+            font-size: 15px; 
+        }
+    </style>
+
+	<div style="font-family:'Roboto', sans-serif;" class="news-container">
+		<h2 style="font-family:'Garamond', serif;">Beneficial News</h2>
+		<div class="news-items" id="news"></div> 
+	</div>
+	<script>
+		const newsContainer = document.getElementById('news');
+		const newsArticles = [
+			{
+				title: "Điều gì xảy ra trong quá trình nhịn ăn dài ngày?",
+				link: "https://suckhoedoisong.vn/dieu-gi-xay-ra-trong-qua-trinh-nhin-an-dai-ngay-16924092521033727.htm",
+				description: "SKĐS - Không có nghiên cứu nào chắc chắn về giới hạn nhịn ăn của con người vì khoa học không cho phép 'thí nghiệm' này. Tuy nhiên, dựa trên những thu thập từ một số người chủ động nhịn ăn cho thấy con người có thể nhịn ăn nhiều ngày khi có nước duy trì.",
+				citation: "Source: Báo Sức khỏe & Đời sống - Cơ quan ngôn luận của Bộ Y tế"
+			},
+			{
+				title: "6 lợi ích của trà xanh đối với làn da",
+				link: "https://suckhoedoisong.vn/6-loi-ich-cua-tra-xanh-doi-voi-lan-da-169240925155309614.htm",
+				description: "SKDS - Trà xanh được biết đến là thức uống lành mạnh mang lại nhiều lợi ích cho sức khỏe. Trà xanh cũng rất tốt cho làn da, giúp da khỏe mạnh và rạng rỡ.",
+				citation: "Source: Báo Sức khỏe & Đời sống - Cơ quan ngôn luận của Bộ Y tế"
+			},
+			{
+				title: "Vì sao có người ăn nhiều nhưng không tăng cân?",
+				link: "https://suckhoeviet.org.vn/vi-sao-co-nguoi-an-nhieu-nhung-khong-tang-can-13872.html",
+				description: "Có những người ăn nhiều nhưng không tăng cân, nhất là những người có thể trạng gầy. Vậy nguyên nhân do đâu và cách khắc phục như thế nào? Chúng ta cùng tìm hiểu trong bài viết dưới đây.",
+				citation: "Source: Tạp chí điện tử Sức khỏe Việt"
+			},
+			{
+				title: "Cơ thể sẽ ra sao khi chúng ta cắt giảm lượng đường?",
+				link: "https://suckhoeviet.org.vn/co-the-se-ra-sao-khi-chung-ta-cat-giam-luong-duong-13625.html",
+				description: "Các chuyên gia dinh dưỡng cũng như bác sĩ chuyên khoa luôn khuyến cáo cần phải giảm bớt lượng đường bổ sung vì chúng gây ra nhiều vấn đề đối với sức khỏe. Vậy điều gì sẽ xảy ra khi chúng ta cắt giảm đường nạp vào cơ thể?",
+				citation: "Source: Tạp chí điện tử Sức khỏe Việt"
+			}
+		];
+		function displayNews() {
+			newsArticles.forEach(article => {
+				const newsItem = document.createElement('div');
+				newsItem.className = 'news-item';
+				newsItem.innerHTML = `
+					<h3><a href="${article.link}" target="_blank"><i>${article.title}</i></a></h3>
+					<p class="description">${article.description}</p> 
+					<p class="citation">${article.citation} (<a href="${article.link}" target="_blank">link</a>)</p>
+				`;
+				newsContainer.appendChild(newsItem);
+			});
+		}
+		displayNews();
+	</script>
+<br>
+<br>
+            <div id="footer">
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="footerNav">
+                        <ul><li><a href="homepage_final.html"> Home Page </a></li>
+                            <li><a href="menu.html"> Product </a></li>
+                            <li><a href="homepage_final.html"> About Us</a></li>
+                            <li><a href="FAQ-contact.html"> Contact </a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </footer>
+    </div>
+</div>
+    <!-- Cookies Privacy -->
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            margin: 20px;
+        }
+        .cookie-banner {
+            position: fixed;
+            bottom: -100px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 90%; 
+            max-width: 930px; 
+            background-color: #a3b18a;
+            padding: 10px 0px 15px;
+            padding-left: -20px;
+            box-shadow: 0 -1px 7px #283618;
+            transition: bottom 0.5s ease; 
+            z-index: 1000;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:#283618;
+        }
+        .cookie-banner.show {
+            bottom: 0; 
+        }
+        .cookie-banner button {
+            margin: 0 13px;
+            background-color: #fefae0; 
+            color: #283618; 
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 4px;;
+            padding: 10px 10px;
+            transition: background-color 0.3s; 
+        }
+        .cookie-banner button:hover {
+            background-color: #283618; 
+            color: #fefae0; 
+        }
+    </style>
+    
+    <div class="cookie-banner" id="cookieBanner">
+        <p><div> Matdate uses cookies on its website, including cookies from its partners, enhance your user experience, analyze its website traffic, </div> provide you with features available on social networks. You can manage your preferences in the cookie settings. </p>
+        <button id="allowCookies">Allow all cookies</button>
+        <button id="viewPolicy">Watch cookie settings</button>
+        <button id="continueWithoutAccepting">Continue without accepting</button> 
+    </div>
+
+    <script>
+        window.onload = function() {
+            const cookieBanner = document.getElementById('cookieBanner');
+            setTimeout(() => {
+                cookieBanner.classList.add('show'); 
+            }, 100); 
+        };
+
+        document.getElementById('allowCookies').onclick = function() {
+            const cookieBanner = document.getElementById('cookieBanner');
+            cookieBanner.classList.remove('show'); 
+            setTimeout(() => {
+                cookieBanner.style.display = 'none'; 
+            }, 500); 
+        
+            document.cookie = "cookies_accepted=true; path=/; max-age=" + 60*60*24*30; 
+        };
+
+        document.getElementById('viewPolicy').onclick = function() {
+            window.location.href = 'cookies-privacy.html';
+        };
+
+        document.getElementById('continueWithoutAccepting').onclick = function() {
+            const cookieBanner = document.getElementById('cookieBanner');
+            cookieBanner.classList.remove('show'); 
+            setTimeout(() => {
+                cookieBanner.style.display = 'none'; 
+            }, 500); 
+        };
+    </script>
+</body>
+</html>

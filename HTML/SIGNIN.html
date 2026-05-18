@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOG IN</title>
+<h1 id="heading" class="hidden">MATDATE</h1>
+<h2> Mark your date green! </h2>
+<link rel="stylesheet" type="text/css" href="../CSS/dangnhapdangki.css">
+<script src="../JS/dangnhapdangki.js"> </script>
+    <script src="../JS/assetPathFix.js" defer></script>
+</head>
+<body>
+<a href="homepage_final.html" class="home">
+    <img src="homeicon.png" alt="Home" />
+</a>
+<div id="khungdangnhap">
+<h3 style="font-size: 25px; font-family: Garamond; margin-top: 15px; color: #74512d;"> Log In </h3>
+<form name="login" method="post">
+<label for="sign"> Username </label><br>
+<input type="text" name="sign" placeholder="Username">
+<br>
+<br>
+<label for="pass"> Password </label><br>
+<input type="password" name="pass" placeholder="Password">
+<br>
+<br>
+<input type="button" value="Log in" onclick="dangnhap()" name="log in">
+</form>
+
+<p style="font-family: Garamond; color: #436850;"> Don't have an account? </p>
+<p><a href="javascript:void(0);" onclick="redirectToSignup()" style="font-family: Garamond; color: #436850;"> Register here</a></p>
+
+</body>
+</html>
