@@ -17,7 +17,7 @@ body {
 #header {
     max-width: 100%;
     padding: 0px 40px 20px;
-    margin-top: 33px;
+    margin-top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -220,3 +220,153 @@ body {
 .footerNav ul li a:hover{
     color: #4f772d;
 }
+/* ===== Moved from HTML/homepage_final.html (extracted embedded <style> blocks) ===== */
+body {
+    font-family: 'Garamond', serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.left-image {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 300px;
+}
+
+.hover-underline {
+    text-decoration: none;
+    transition: text-decoration 0.3s, transform 0.3s;
+}
+.hover-underline:hover {
+    text-decoration: underline;
+    transform: translateY(-5px);
+}
+
+/* Image slider styles */
+body {
+    background-color: #f0f0f0;
+}
+.image-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    cursor: grab;
+    scroll-snap-type: x mandatory;
+}
+.image-slider::-webkit-scrollbar {
+    display: none;
+}
+.image-item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 10px;
+    scroll-snap-align: start;
+}
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Hover image */
+.image:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* Beneficial News styles */
+body {
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.news-container {
+    max-width: 2000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+.news-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.news-item {
+    flex: 1 1 calc(33% - 20px);
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+h2 {
+    color: #755029;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    color: #739862;
+}
+a:hover {
+    text-decoration: underline;
+}
+.citation {
+    font-size: 0.9em;
+    color: #555;
+}
+.description {
+    color: #41684f;
+    font-size: 15px;
+}
+
+/* Cookie banner styles */
+body {
+    font-family: 'Garamond', serif;
+    margin: 20px;
+}
+.cookie-banner {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 930px;
+    background-color: #a3b18a;
+    padding: 10px 0px 15px;
+    padding-left: -20px;
+    box-shadow: 0 -1px 7px #283618;
+    transition: bottom 0.5s ease;
+    z-index: 1000;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#283618;
+}
+.cookie-banner.show {
+    bottom: 0;
+}
+.cookie-banner button {
+    margin: 0 13px;
+    background-color: #fefae0;
+    color: #283618;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;;
+    padding: 10px 10px;
+    transition: background-color 0.3s;
+}
+.cookie-banner button:hover {
+    background-color: #283618;
+    color: #fefae0;
+}
+
+/* End extracted CSS */
