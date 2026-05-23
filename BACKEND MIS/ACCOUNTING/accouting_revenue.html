@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title> Finance Tracking - MATDATE </title>
+        <link rel="stylesheet" type="text/css" href="accouting_revenue.css">
+        <script src="accouting_revenue.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" >
+            <div class="logo">
+                <img src="logofinal.jpg" alt="Logo">
+                <span class="brand-name"> MATDATE </span> 
+            </div>
+
+            <h1> ACCOUNTING DEPARTMENT </h1>
+
+            <br> 
+
+            <ul class="navigation">
+                <li> <a href="accounting_dashboard.html" id="bar"> Dashboard </a> </li>
+                <li> <a href="accouting_revenue.html" id="bar"> Finance </a> </li>
+                <li> <a href="accouting_ inventory.html" id="bar"> Inventory </a> </li>
+                <li> <a href="accouting_supplier.html" id="bar"> Suppliers </a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="fixed-content">
+                <div class="header">
+                    <div class="search-bar-container">
+                        <input type="text" class="search-bar" placeholder="Search...">
+                        <button class="search-btn">
+                            <img src="kinhlup.jpg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div class="user-profile" onclick="toggleDropdown()">
+                        <div class="profile-box">
+                            <img src="user.png" alt="User Profile" class="user-icon">
+                            <span class="user-name">Lam Bao Nghi</span>
+                        </div>
+                        <div class="dropdown-content" id="dropdown">
+                            <div class="Account"> 
+                                <h3>Accounting Department</h3>
+                                <div class="pic"> 
+                                    <img src="user.png" alt="User Profile">
+                                </div>    
+                                <p>Lam Bao Nghi</p>
+                                <p>lambaonghi.matdate@gmail.com</p>
+                                <hr>
+                            </div>
+                            <a href=""><img src="setting.jpg" alt="Settings" class="icon"> Setting</a>
+                            <a href=""><img src="key.jpg" alt="Manage Your Account" class="icon"> Manage Your Account</a>
+                            <a href=""><img src="logout.png" alt="Log Out" class="icon"> Log Out</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="date-range" style="font-weight: bold;">
+                    <label for="start-date"> From </label>
+                    <input type="date" id="start-date">
+                    <label for="end-date"> to </label>
+                    <input type="date" id="end-date">
+                
+                    <br> <br>
+
+                    <div class="action-buttons">
+                        <button class="action-btn">
+                            <img src="edit.png" alt="Edit"> Edit
+                        </button>
+                        <button class="action-btn">
+                            <img src="add.png" alt="Add"> Add
+                        </button>
+                        <button class="action-btn">
+                            <img src="delete.png" alt="Delete"> Delete
+                        </button>
+                        <button class="action-btn">
+                            <img src="hidden.png" alt="Hidden"> Hidden
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h1> FINANCE Tracking </h1>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th> Month</th>
+                            <th> Revenue (VND) </th>
+                            <th> Cost (VND) </th>
+                            <th> Profit (VND) </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> January </td>
+                            <td> 111.235.000 </td>
+                            <td> 109.750.000 </td>
+                            <td> 1.485.000 </td>
+                        </tr>
+
+                        <tr>
+                            <td> February </td>
+                            <td> 116.890.000 </td>
+                            <td> 120.540.000 </td>
+                            <td> -3.650.000 </td>
+                        </tr>
+
+                        <tr>
+                            <td> March </td>
+                            <td> 123.410.000 </td>
+                            <td> 121.500.000 </td>
+                            <td> 1.910.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> April </td>
+                            <td> 124.985.000 </td>
+                            <td> 118.450.000 </td>
+                            <td> 6.535.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> May </td>
+                            <td> 118.450.000 </td>
+                            <td> 118.000.000 </td>
+                            <td> 450.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> June </td>
+                            <td> 127.845.000 </td>
+                            <td> 120.120.000 </td>
+                            <td> 7.725.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> July </td>
+                            <td> 132.870.000 </td>
+                            <td> 121.780.000 </td>
+                            <td> 11.090.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> August </th>
+                            <td> 120.780.000 </th>
+                            <td> 122.500.000 </th>
+                            <td> -1.720.000 </th>
+                        </tr>
+            
+                        <tr>
+                            <td> September </td>
+                            <td> 126.495.000 </td>
+                            <td> 122.235.000 </td>
+                            <td> 4.260.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> October </td>
+                            <td>  </td>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>  
+                        
+                        <tr>
+                            <td> November </td>
+                            <td>  </td>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr> 
+
+                        <tr>
+                            <td> December </td>
+                            <td>  </td>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr> 
+            
+                    </tbody>
+                </table>
+
+                <div class="chart">
+                    <img src="barchart.png" class="bottom">
+                    <img src="linechart.png" class="bottom">
+                </div>
+
+            </div>    
+        </div>    
+          
+    </body>
+
+</html>

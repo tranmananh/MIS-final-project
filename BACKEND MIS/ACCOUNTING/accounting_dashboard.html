@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title> Accounting Department - MATDATE </title>
+        <link rel="stylesheet" type="text/css" href="accounting_dashboard.css">
+        <script src="accounting_dashboard.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" >
+            <div class="logo">
+                <img src="logofinal.jpg" alt="Logo">
+                <span class="brand-name"> MATDATE </span> 
+            </div>
+
+            <h1> ACCOUNTING DEPARTMENT </h1>
+
+            <br> 
+            <ul class="navigation">
+                <li> <a href="accounting_dashboard.html" id="bar"> Dashboard </a> </li>
+                <li> <a href="accouting_revenue.html" id="bar"> Finance </a> </li>
+                <li> <a href="accouting_ inventory.html" id="bar"> Inventory </a> </li>
+                <li> <a href="accouting_supplier.html" id="bar"> Suppliers </a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="fixed-content">
+                <div class="header">
+                    <div class="search-bar-container">
+                        <input type="text" class="search-bar" placeholder="Search...">
+                        <button class="search-btn">
+                            <img src="kinhlup.jpg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div class="account">
+                        <button class="account-btn" onclick="toggleAccountMenu()"> Lam Bao Nghi </button>
+                        <div class="account-menu" id="account-menu">
+                          
+                            <p><strong>Name:</strong> Lam Bao Nghi</p>
+                            <p><strong>Email:</strong> lambaonghi.matdate@gmail.com</p>
+                            <button class="action-btn" onclick="settings()">Settings</button>
+                            <button class="action-btn" onclick="logout()">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="date-range" style="font-weight: bold;">
+                    <label for="start-date"> From </label>
+                    <input type="date" id="start-date">
+                    <label for="end-date"> to </label>
+                    <input type="date" id="end-date">
+                
+                    <br> <br>
+
+                    <div class="contentphu" id="content-area">
+                        <h2>Welcome Lam Bao Nghi to the Accounting Department!</h2>
+            
+                        <div class="button-bar">
+                            <button class="action-btn" onclick="editItem()">Edit</button>
+                            <button class="action-btn" onclick="addItem()">Add</button>
+                            <button class="action-btn" onclick="deleteItem()">Delete</button>
+                            <button class="action-btn" onclick="hideItem()">Hide</button>
+                        </div>
+
+
+                        <div class="item-container">
+                            <div class="item">
+                                <a href="accouting_revenue.html">
+                                <img src="barchart.png" alt="Item 1">
+                               </a>
+                            </div>
+                            <div class="item">
+                            <a href="accouting_revenue.html">
+                                <img src="linechart.png" alt="Item 2">
+                               </a>
+                            </div>
+                            <div class="item">
+                            <a href="accouting_ inventory.html">
+                                <img src="inventory.png" alt="Item 3">
+                                </a>
+                            </div>
+                        </div>
+            
+
+            </div>    
+        </div>    
+          
+    </body>
+
+</html>

@@ -298,6 +298,259 @@ a:hover {
     color: #555;
 }
 .description {
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+/* Tablet devices (768px and below) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .header-banner {
+        height: auto;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #wrapper {
+        margin: 10px;
+        height: auto;
+    }
+
+    #header {
+        padding: 10px;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #menu .item {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    #menu .item a {
+        font-size: 13px;
+        margin-right: 0;
+    }
+
+    .discussion-section, .resources-section, .contact-section, .create-section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    input[type="text"], textarea {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .comment-box {
+        width: 100%;
+        height: 80px;
+    }
+
+    .topic-list {
+        width: 95%;
+    }
+
+    .topic-list li {
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .image {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .news-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Mobile devices (600px and below) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .header-banner {
+        height: auto;
+        padding: 10px;
+        margin: 8px;
+        border-radius: 3px;
+    }
+
+    #wrapper {
+        margin: 8px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    #header {
+        padding: 8px;
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    #menu .item {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    #menu .item a {
+        font-size: 11px;
+        margin-right: 0;
+    }
+
+    #actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #actions .item {
+        margin-right: 0;
+    }
+
+    .discussion-section, .resources-section, .contact-section, .create-section {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 3px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .comment-box {
+        width: 100%;
+        height: 70px;
+        margin-top: 8px;
+    }
+
+    .topic-list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .topic-list li {
+        padding: 12px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border-radius: 3px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .image {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .centered-image {
+        max-width: 100%;
+    }
+
+    .news-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .news-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .news-item {
+        flex: 1 1 100%;
+        padding: 8px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .citation {
+        font-size: 0.85em;
+    }
+}
     color: #41684f;
     font-size: 15px; 
 }

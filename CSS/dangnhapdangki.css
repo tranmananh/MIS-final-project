@@ -186,3 +186,145 @@ th {
     width: 60px; 
     height: 60px; 
 }
+
+/* RESPONSIVE MEDIA QUERIES */
+/* Tablet devices (768px and below) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #khungdangnhap {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #khungdangki {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    input[name="sign"],
+    input[name="pass"],
+    input[name="firstname"],
+    input[name="lastname"],
+    input[name="username"],
+    input[name="pazsword"],
+    input[name="email"],
+    input[name="phonenumber"] {
+        width: 85%;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[name="log in"],
+    input[name="register"] {
+        width: 90%;
+        max-width: 200px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    select {
+        width: 85%;
+        height: 35px;
+    }
+
+    .home img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Mobile devices (600px and below) */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    #khungdangnhap {
+        width: 95%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    #khungdangki {
+        width: 95%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    input[name="sign"],
+    input[name="pass"],
+    input[name="firstname"],
+    input[name="lastname"],
+    input[name="username"],
+    input[name="pazsword"],
+    input[name="email"],
+    input[name="phonenumber"] {
+        width: 100%;
+        height: 40px;
+        margin-top: 8px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[name="log in"],
+    input[name="register"] {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    select {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    td.tieude {
+        width: 50%;
+    }
+
+    th {
+        padding: 5px 2px;
+    }
+
+    .home img {
+        width: 45px;
+        height: 45px;
+    }
+}

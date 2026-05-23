@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title> Suppliers Information - MATDATE </title>
+        <link rel="stylesheet" type="text/css" href="accouting_supplier.css">
+        <script src="accouting_supplier.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" >
+            <div class="logo">
+                <img src="logofinal.jpg" alt="Logo">
+                <span class="brand-name"> MATDATE </span> 
+            </div>
+
+            <h1> ACCOUNTING DEPARTMENT </h1>
+
+            <br> 
+
+            <ul class="navigation">
+                <li> <a href="accounting_dashboard.html" id="bar"> Dashboard </a> </li>
+                <li> <a href="accouting_revenue.html" id="bar"> Finance </a> </li>
+                <li> <a href="accouting_ inventory.html" id="bar"> Inventory </a> </li>
+                <li> <a href="accouting_supplier.html" id="bar"> Suppliers </a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="fixed-content">
+                <div class="header">
+                    <div class="search-bar-container">
+                        <input type="text" class="search-bar" placeholder="Search...">
+                        <button class="search-btn">
+                            <img src="kinhlup.jpg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div class="user-profile" onclick="toggleDropdown()">
+                        <div class="profile-box">
+                            <img src="user.png" alt="User Profile" class="user-icon">
+                            <span class="user-name">Lam Bao Nghi</span>
+                        </div>
+                        <div class="dropdown-content" id="dropdown">
+                            <div class="Account"> 
+                                <h3>Accounting Department</h3>
+                                <div class="pic"> 
+                                    <img src="user.png" alt="User Profile">
+                                </div>    
+                                <p>Lam Bao Nghi</p>
+                                <p>lambaonghi.matdate@gmail.com</p>
+                                <hr>
+                            </div>
+                            <a href=""><img src="setting.jpg" alt="Settings" class="icon"> Setting</a>
+                            <a href=""><img src="key.jpg" alt="Manage Your Account" class="icon"> Manage Your Account</a>
+                            <a href=""><img src="logout.png" alt="Log Out" class="icon"> Log Out</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="date-range" style="font-weight: bold;">
+                    <label for="start-date"> From </label>
+                    <input type="date" id="start-date">
+                    <label for="end-date"> to </label>
+                    <input type="date" id="end-date">
+                
+                    <br> <br>
+
+                    <div class="action-buttons">
+                        <button class="action-btn">
+                            <img src="edit.png" alt="Edit"> Edit
+                        </button>
+                        <button class="action-btn">
+                            <img src="add.png" alt="Add"> Add
+                        </button>
+                        <button class="action-btn">
+                            <img src="delete.png" alt="Delete"> Delete
+                        </button>
+                        <button class="action-btn">
+                            <img src="hidden.png" alt="Hidden"> Hidden
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h1> Suppliers Information </h1>
+                <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>Supplier Sourcing</th>
+                                <th>Address</th>
+                                <th>Contact Information</th>
+                                <th>Material Name</th>
+                                <th>Material Origin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thiện Nhân Organic</td>
+                                <td>1/4 Đ. 9, Khu Phố 4, Quận 2, Hồ Chí Minh</td>
+                                <td>0936037518 (SMS/Zalo)</td>
+                                <td>Bột mì nguyên cám Bob's Red Mill</td>
+                                <td>America</td>
+                            </tr>
+                            <tr>
+                                <td>Trà Doanh Nhân</td>
+                                <td>Ngõ 26, đường Chu Văn An, Phường Hoàng Văn Thụ, Tp. Thái Nguyên</td>
+                                <td>02803848484 - 0976700454</td>
+                                <td>Bột matcha trà xanh Oraka</td>
+                                <td>Tân Cương - Thái Nguyên</td>
+                            </tr>
+                            <tr>
+                                <td>Công ty TNHH Thực phẩm Phương Ngọc</td>
+                                <td>246/16/15 Đ. 26/3, Phường Bình Hưng Hoà, Quận Bình Tân, Hồ Chí Minh</td>
+                                <td>0898333639</td>
+                                <td>Sữa tươi Promess Skim</td> 
+                                <td>Tập đoàn Lact’ Union, Pháp</td>
+                            </tr>
+                            <tr>
+                                <td>Công ty Thảo Mộc Thiên Nhiên 24h</td>
+                                <td>12 Võ Văn Kiệt, Phường Nguyễn Thái Bình, Quận 1, Hồ Chí Minh</td>
+                                <td>0787040209</td>
+                                <td>Combo bột tạo màu thực phẩm</td>
+                                <td>Việt Nam</td>
+                            </tr>
+                            <tr>
+                                <td>Công ty TNHH Solomon International</td>
+                                <td>653 Đ. Phan Văn Trị, Phường 7, Gò Vấp, Hồ Chí Minh</td>
+                                <td>02862966570</td>
+                                <td>Bơ lạt hữu cơ Organic Valley</td>
+                                <td>Hoa Kỳ</td>
+                            </tr>
+                            <tr>
+                            <td>Công ty TNHH Solomon International</td>
+                            <td>653 Đ. Phan Văn Trị, Phường 7, Gò Vấp, Hồ Chí Minh</td>
+                            <td>02862966570</td>
+                            <td> Cream Chese Organic Valley</td>
+                            <td>Hoa Kỳ</td>
+                            </tr>
+                            <tr>
+                                <td>Đại lý Đường ăn kiêng isomalt</td>
+                                <td>Hồ Chí Minh</td>
+                                <td>Online (Shopee)</td>
+                                <td>Đường ăn kiêng isomalt</td>
+                                <td>Đức</td>
+                            </tr>
+                            <tr>
+                                <td>Hạt Dinh Dưỡng HappyWise</td>
+                                <td>Phường Tân Thành, Quận Tân Phú, Hồ Chí Minh</td>
+                                <td>0906393195</td>
+                                <td>Các loại đậu hạt hữu cơ ngũ cốc dinh dưỡng</td>
+                                <td>Hồ Chí Minh</td>
+                            </tr>
+                            <tr>
+                                <td>Siêu thị Bách hoá Xanh</td>
+                                <td>43a Tân Hòa Đông, phường 14, Quận 6, Hồ Chí Minh</td>
+                                <td>19001908</td>
+                                <td>Trứng gà</td>
+                                <td>Trứng gà ta TFood</td>
+                            </tr>
+                            <tr>
+                                <td>Nhất Hương - Bakers' Mart</td>
+                                <td>155 Đ. Tân Kỳ Tân Quý, Phường Tân Sơn Nhì, Quận Tân Phú, Hồ Chí Minh</td>
+                                <td> 02862678913</td>
+                                <td>Hương Vanilla Rayner's 28ml</td>
+                                <td>Anh</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                
+                
+
+            </div>    
+        </div>    
+          
+    </body>
+
+</html>

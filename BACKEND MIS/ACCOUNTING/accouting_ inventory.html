@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <title> Inventory - MATDATE </title>
+        <link rel="stylesheet" type="text/css" href="accouting_inventory.css">
+        <script src="accouting_inventory.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" >
+            <div class="logo">
+                <img src="logofinal.jpg" alt="Logo">
+                <span class="brand-name"> MATDATE </span> 
+            </div>
+
+            <h1> ACCOUNTING DEPARTMENT </h1>
+
+            <br> 
+            <ul class="navigation">
+                <li> <a href="accounting_dashboard.html" id="bar"> Dashboard </a> </li>
+                <li> <a href="accouting_revenue.html" id="bar"> Finance </a> </li>
+                <li> <a href="accouting_ inventory.html" id="bar"> Inventory </a> </li>
+                <li> <a href="accouting_supplier.html" id="bar"> Suppliers </a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="fixed-content">
+                <div class="header">
+                    <div class="search-bar-container">
+                        <input type="text" class="search-bar" placeholder="Search...">
+                        <button class="search-btn">
+                            <img src="kinhlup.jpg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div class="user-profile" onclick="toggleDropdown()">
+                        <div class="profile-box">
+                            <img src="user.png" alt="User Profile" class="user-icon">
+                            <span class="user-name">Lam Bao Nghi</span>
+                        </div>
+                        <div class="dropdown-content" id="dropdown">
+                            <div class="Account"> 
+                                <h3>Accounting Department</h3>
+                                <div class="pic"> 
+                                    <img src="user.png" alt="User Profile">
+                                </div>    
+                                <p>Lam Bao Nghi</p>
+                                <p>lambaonghi.matdate@gmail.com</p>
+                                <hr>
+                            </div>
+                            <a href=""><img src="setting.jpg" alt="Settings" class="icon"> Setting</a>
+                            <a href=""><img src="key.jpg" alt="Manage Your Account" class="icon"> Manage Your Account</a>
+                            <a href=""><img src="logout.png" alt="Log Out" class="icon"> Log Out</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="date-range" style="font-weight: bold;">
+                    <label for="start-date"> From </label>
+                    <input type="date" id="start-date">
+                    <label for="end-date"> to </label>
+                    <input type="date" id="end-date">
+                
+                    <br> <br>
+
+                    <div class="action-buttons">
+                        <button class="action-btn">
+                            <img src="edit.png" alt="Edit"> Edit
+                        </button>
+                        <button class="action-btn">
+                            <img src="add.png" alt="Add"> Add
+                        </button>
+                        <button class="action-btn">
+                            <img src="delete.png" alt="Delete"> Delete
+                        </button>
+                        <button class="action-btn">
+                            <img src="hidden.png" alt="Hidden"> Hidden
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h1> Inventory </h1>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>NUMBER</th>
+                            <th>NAME</th>
+                            <th>NUMBER CODE</th>
+                            <th>Supplier Sourcing</th>
+                            <th>Address</th>
+                            <th>Contact Information</th>
+                            <th>Material Origin</th>
+                            <th>UNIT</th>
+                            <th>QUANTITY OF PACKAGES</th>
+                            <th>UNIT INSTOCK</th>
+                            <th>UNIT OF PRICE</th>
+                            <th>TOTAL</th>
+                            <th>Order</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>1</td>
+                    <td>Bột mì nguyên cám Bob's Red Mill</td>
+                    <td>PO001</td>
+                    <td>Thiện Nhân Organic</td>
+                    <td>1/4 Đ. 9, Khu Phố 4, Quận 2, Hồ Chí Minh</td>
+                    <td>0936037518 (SMS/Zalo)</td>
+                    <td>America</td>
+                    <td>kilogram</td>
+                    <td>52</td>
+                    <td>10</td>
+                    <td>150,000 ₫</td>
+                    <td>7,800,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bột matcha trà xanh Oraka</td>
+                    <td>BM002</td>
+                    <td>Trà Doanh Nhân</td>
+                    <td>Ngõ 26, đường Chu Văn An, Phường Hoàng Văn Thụ, Tp. Thái Nguyên</td>
+                    <td>02803848484 - 0976700454</td>
+                    <td>Tân Cương - Thái Nguyên</td>
+                    <td>kilogram</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>200,000 ₫</td>
+                    <td>4,000,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sữa tươi Promess Skim</td>
+                    <td>ST333</td>
+                    <td>Công ty TNHH Thực phẩm Phương Ngọc</td>
+                    <td>246/16/15 Đ. 26/3, Phường Bình Hưng Hoà, Quận Bình Tân, Hồ Chí Minh</td>
+                    <td>898333639</td>
+                    <td>Tập đoàn Lact’ Union, Pháp</td>
+                    <td>litter</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>160,000 ₫</td>
+                    <td>960,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Combo bột tạo màu thực phẩm</td>
+                    <td>CB404</td>
+                    <td>Công ty Thảo Mộc Thiên Nhiên 24h</td>
+                    <td>12 Võ Văn Kiệt, Phường Nguyễn Thái Bình, Quận 1, Hồ Chí Minh</td>
+                    <td>787040209</td>
+                    <td>Việt Nam</td>
+                    <td>kilogram</td>
+                    <td>2</td>
+                    <td>0.2</td>
+                    <td>50,000 ₫</td>
+                    <td>100,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bơ lạt hữu cơ Organic Valley</td>
+                    <td>BLA665</td>
+                    <td>Công ty TNHH Solomon International</td>
+                    <td>653 Đ. Phan Văn Trị, Phường 7, Gò Vấp, Hồ Chí Minh</td>
+                    <td>2862966570</td>
+                    <td>Hoa Kỳ</td>
+                    <td>kilogram</td>
+                    <td>43</td>
+                    <td>3</td>
+                    <td>100,000 ₫</td>
+                    <td>4,300,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Cream Cheese Organic Valley</td>
+                    <td>C666</td>
+                    <td>Công ty TNHH Solomon International</td>
+                    <td>653 Đ. Phan Văn Trị, Phường 7, Gò Vấp, Hồ Chí Minh</td>
+                    <td>2862966570</td>
+                    <td>Hoa Kỳ</td>
+                    <td>kilogram</td>
+                    <td>21</td>
+                    <td>5</td>
+                    <td>220,000 ₫</td>
+                    <td>4,620,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Đường ăn kiêng isomalt</td>
+                    <td>MĐOO7</td>
+                    <td>Đại lý Đường ăn kiêng isomalt</td>
+                    <td>Hồ Chí Minh</td>
+                    <td>Online (Shopee)</td>
+                    <td>Đức</td>
+                    <td>kilogram</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>160,000 ₫</td>
+                    <td>1,920,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Các loại đậu hạt hữu cơ ngũ cốc dinh dưỡng</td>
+                    <td>CL938</td>
+                    <td>Hạt Dinh Dưỡng HappyWise</td>
+                    <td>Phường Tân Thành, Quận Tân Phú, Hồ Chí Minh</td>
+                    <td>906393195</td>
+                    <td>Hồ Chí Minh</td>
+                    <td>kilogram</td>
+                    <td>18</td>
+                    <td>30</td>
+                    <td>260,000 ₫</td>
+                    <td>4,680,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Trứng gà</td>
+                    <td>TG019</td>
+                    <td>Siêu thị Bách hoá Xanh</td>
+                    <td>43a Tân Hòa Đông, phường 14, Quận 6, Hồ Chí Minh</td>
+                    <td>19001908</td>
+                    <td>Trứng gà ta TFood</td>
+                    <td>dozen</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>35,000 ₫</td>
+                    <td>175,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Hương Vanilla Rayner's 28ml</td>
+                    <td>HV7810</td>
+                    <td>Nhất Hương - Bakers' Mart</td>
+                    <td>155 Đ. Tân Kỳ Tân Quý, Phường Tân Sơn Nhì, Quận Tân Phú, Hồ Chí Minh</td>
+                    <td>2862678913</td>
+                    <td>Anh</td>
+                    <td>milliliter</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>90,000 ₫</td>
+                    <td>270,000 ₫</td>
+                    <td><button class="email-but" onclick="sendOrder()">Order</button></td>
+                </tr>
+            
+                        
+                    <tr>
+                        <td colspan="8">TOTAL</td>
+                        <td>182</td>
+                        <td>65.2</td>
+                        <td>1,425,000 ₫</td>
+                        <td>28,825,000 ₫</td>
+                        <td> </td>
+                    </tr>
+                    </tbody>
+                
+                </table>
+                
+            </div>    
+        </div>    
+          
+    </body>
+
+</html>

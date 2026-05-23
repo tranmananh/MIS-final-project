@@ -1,0 +1,311 @@
+<html></html>
+    <head>
+        <title> Order Information - MATDATE </title>
+        <link rel="stylesheet" type="text/css" href="order.css">
+        <script src="order.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" >
+            <div class="logo">
+                <img src="logofinal.jpg" alt="Logo">
+                <span class="brand-name"> MATDATE </span> 
+            </div>
+
+            <h1>  DEPARTMENT </h1>
+
+            <br> 
+
+            <ul class="navigation">
+                <li> <a href="" id="bar">  </a> </li>
+                <li> <a href="" id="bar"> Orders </a> </li>
+                <li> <a href="" id="bar">  </a> </li>
+                <li> <a href="" id="bar">  </a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="fixed-content">
+                <div class="header">
+                    <div class="search-bar-container">
+                        <input type="text" class="search-bar" placeholder="Search...">
+                        <button class="search-btn">
+                            <img src="kinhlup.jpg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div class="user-profile" onclick="toggleDropdown()">
+                        <div class="profile-box">
+                            <img src="user.png" alt="User Profile" class="user-icon">
+                            <span class="user-name">Lam Bao Nghi</span>
+                        </div>
+                        <div class="dropdown-content" id="dropdown">
+                            <div class="Account"> 
+                                <h3>  Department</h3>
+                                <div class="pic"> 
+                                    <img src="user.png" alt="User Profile">
+                                </div>    
+                                <p>Lam Bao Nghi</p>
+                                <p>lambaonghi.matdate@gmail.com</p>
+                                <hr>
+                            </div>
+                            <a href=""><img src="setting.jpg" alt="Settings" class="icon"> Setting</a>
+                            <a href=""><img src="key.jpg" alt="Manage Your Account" class="icon"> Manage Your Account</a>
+                            <a href=""><img src="logout.png" alt="Log Out" class="icon"> Log Out</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="date-range" style="font-weight: bold;">
+                    <label for="start-date"> From </label>
+                    <input type="date" id="start-date">
+                    <label for="end-date"> to </label>
+                    <input type="date" id="end-date">
+                
+                    <br> <br>
+
+                    <div class="action-buttons">
+                        <button class="action-btn">
+                            <img src="edit.png" alt="Edit"> Edit
+                        </button>
+                        <button class="action-btn">
+                            <img src="add.png" alt="Add"> Add
+                        </button>
+                        <button class="action-btn">
+                            <img src="delete.png" alt="Delete"> Delete
+                        </button>
+                        <button class="action-btn">
+                            <img src="hidden.png" alt="Hidden"> Hidden
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h1> ORDER INFORMATION </h1>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Order Date</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Discount</th>
+                            <th>Total</th>
+                            <th>Payment Method</th>
+                            <th>Status</th>
+                            <th>Customer Info</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD202409001</td>
+                            <td>2/09/2024</td>
+                            <td>Sandwich</td>
+                            <td>2</td>
+                            <td>125.000</td>
+                            <td>0</td>
+                            <td>250.000</td>
+                            <td>Online COD</td>
+                            <td>Delivered</td>
+                            <td class="diachi">Tran Khanh Ngoc<br>0938766544<br> 456 Trần Hưng Đạo </td>
+                            <td class="note"></td>
+                        </tr>
+
+                        <tr> 
+                            <td rowspan="2"> ORD202409002 </td>
+                            <td rowspan="2"> 7/09/2024 </td>
+                            <td> Croissant </td>
+                            <td> 4 </td>
+                            <td> 125.000 </td>
+                            <td rowspan="2"> 0 </td>
+                            <td rowspan="2"> 625.000 </td>
+                            <td rowspan="2"> Offline <br> Cash Payment </td>
+                            <td rowspan="2"> Delivered </td>
+                            <td rowspan="2" class="diachi"> Nguyễn Thanh Tâm <br> 0909123456 <br> 789 Nguyễn Trãi </td>
+                            <td rowspan="2" class="note"> Gọi cho tôi trước khi đến 30 phút. </td>
+                        </tr>
+
+                        <tr>
+                            <td> Cheesecake </td>
+                            <td> 1 </td>
+                            <td> 125.000 </td>
+                        </tr>
+            
+                        <tr> 
+                            <td> ORD202409003 </td>
+                            <td> 10/09/2024 </td>
+                            <td> Cheesecake </td>
+                            <td> 1 </td>
+                            <td> 200.000 </td>
+                            <td> 0 </td>
+                            <td> 200.000 </td>
+                            <td> Online <br>Bank Transfer </td>
+                            <td> Delivered </td>
+                            <td class="diachi"> Trần Văn Bình <br> 0935123456 <br> 123 Lý Tự Trọng </td>
+                            <td class="note">  </td>
+                        </tr>
+            
+                        <tr> 
+                            <td> ORD202409004 </td>
+                            <td> 11/09/2024 </td>
+                            <td> Bakery set </td>
+                            <td> 1 </td>
+                            <td> 170.000 </td>
+                            <td> 0 </td>
+                            <td> 170.000 </td>
+                            <td> Online <br>COD </td>
+                            <td> Delivered </td>
+                            <td class="diachi"> Lê Thị Lan <br> 0978123456 <br> 235 Hoàng Diệu </td>
+                            <td class="note">  </td>
+                        </tr>
+            
+                        <tr> 
+                            <td rowspan="3"> ORD202409005 </td>
+                            <td rowspan="3"> 13/09/2024 </td>
+                            <td> Sandwich </td>
+                            <td> 3 </td>
+                            <td> 125.000 </td>
+                            <td rowspan="3"> 10% </td>
+                            <td rowspan="3"> 2.587.500 </td>
+                            <td rowspan="3"> Online <br>50% Deposit - COD </td>
+                            <td rowspan="3"> Delivered </td>
+                            <td rowspan="3" class="diachi"> Lê Thị Thu <br> 0912345674 <br> 789 Lê Duẩn </td>
+                            <td rowspan="3" class="note"> Tặng kèm thêm khăn giấy </td>
+                        </tr>
+            
+                        <tr>
+                            <td> Cookie set </td>
+                            <td> 5 </td>
+                            <td> 125.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> Brownie set </td>
+                            <td> 15 </td>
+                            <td> 125.000 </td>
+                        </tr>
+            
+                        <tr> 
+                            <td> ORD202409006 </td>
+                            <td> 15/09/2024 </td>
+                            <td> Macaron set </td>
+                            <td> 2 </td>
+                            <td> 150.000 </td>
+                            <td> 0 </td>
+                            <td> 300.000 </td>
+                            <td> Offline <br>Cash Payment </td>
+                            <td> Delivered </td>
+                            <td class="diachi"> Phạm Quang Huy <br> 0978123456 <br> 123 Phan Xích Long </td>
+                            <td class="note">  </td>
+                        </tr>
+            
+                        <tr> 
+                            <td rowspan="4"> ORD202409007 </td>
+                            <td rowspan="4"> 16/09/2024 </td>
+                            <td> Macaron set </td>
+                            <td> 2 </td>
+                            <td> 150.000 </td>
+                            <td rowspan="4"> 0 </td>
+                            <td rowspan="4"> 875.000 </td>
+                            <td rowspan="4"> Offline <br>Bank Transfer </td>
+                            <td rowspan="4"> Delivered </td>
+                            <td rowspan="4" class="diachi"> Hoàng Minh An <br> 0901234567 <br> 987 Cách Mạng Tháng Tám </td>
+                            <td rowspan="4" class="note"> sốp cho em xin một tấm thiệp sinh nhật (màu hồng) với lời nhắn: 'háp pì bớt đê bạn iu!' </td>
+                        </tr>            
+            
+                        <tr>
+                            <td> Cheesecake </td>
+                            <td> 1 </td>
+                            <td> 200.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> Cookie set </td>
+                            <td> 1 </td>
+                            <td> 125.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> Choux set </td>
+                            <td> 2 </td>
+                            <td> 125.000 </td>
+                        </tr>
+            
+                        <tr> 
+                            <td rowspan="2"> ORD202409008 </td>
+                            <td rowspan="2"> 20/09/2024 </td>
+                            <td> Croissant </td>
+                            <td> 2 </td>
+                            <td> 125.000 </td>
+                            <td rowspan="2"> 0 </td>
+                            <td rowspan="2"> 420.000 </td>
+                            <td rowspan="2"> Online <br>COD </td>
+                            <td rowspan="2"> Delivered </td>
+                            <td rowspan="2" class="diachi"> Đặng Thị Lan <br> 0909876543 <br> 654 Điện Biên Phủ </td>
+                            <td rowspan="2" class="note">  </td>
+                        </tr>
+            
+                        <tr>
+                            <td> Bakery set </td>
+                            <td> 1 </td>
+                            <td> 170.000 </td>
+                        </tr>
+
+                        <tr class="highlight">
+                            <td>ORD202409009</td>
+                            <td>23/09/2024</td>
+                            <td>Sandwich</td>
+                            <td>4</td>
+                            <td>125.000</td>
+                            <td>0</td>
+                            <td>500.000</td>
+                            <td>Online COD</td>
+                            <td>Shipping</td>
+                            <td class="diachi">Nguyen Quoc Bao<br>0904567890</td>
+                            <td class="note">Calling to confirm whether the order has been delivered</td>
+                        </tr>
+
+                        <tr> 
+                            <td rowspan="4"> ORD202409010 </td>
+                            <td rowspan="4"> 29/09/2024 </td>
+                            <td> Croissant </td>
+                            <td> 4 </td>
+                            <td> 125.000 </td>
+                            <td rowspan="4"> 5% </td>
+                            <td rowspan="4"> 1.314.600 </td>
+                            <td rowspan="4"> Online <br> Bank Transfer </td>
+                            <td rowspan="4"> Preparing </td>
+                            <td rowspan="4" class="diachi"> Trần Khánh Ngọc <br> 0987766554 <br> 456 Trần Hưng Đạo </td>
+                            <td rowspan="4" class="note">  </td>
+                        </tr>            
+            
+                        <tr>
+                            <td> Choux </td>
+                            <td> 1 </td>
+                            <td> 125.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> Brownie set </td>
+                            <td> 2 </td>
+                            <td> 125.000 </td>
+                        </tr>
+            
+                        <tr>
+                            <td> Bakery set </td>
+                            <td> 3 </td>
+                            <td> 170.000 </td>
+                        </tr>
+            
+                    </tbody>
+                </table>
+            </div>    
+        </div>    
+          
+    </body>
+
+</html>
